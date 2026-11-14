@@ -2,8 +2,8 @@
 
 > **How to use this notebook.** Replace every line that says `YOUR ANSWER HERE` (and delete the grey instruction lines that start with `>`) with your own work. Keep the headings. Commit after each part. Do not leave any instruction text in your final version.
 
-**Student name:** YOUR FULL NAME
-**GitHub username:** YOUR GITHUB USERNAME
+**Student name:** Rishabh Bhutani
+**GitHub username:** rishabhssworld
 
 > This notebook is my own individual work. I did my own research, sketches, writing and code.
 
@@ -11,22 +11,22 @@
 
 ## Part 0: Project Snapshot
 
-**Project name:** YOUR ANSWER HERE
-**Tagline (10 words or fewer):** YOUR ANSWER HERE
-**Repository link:** https://github.com/...
+**Project name:** PR Pathway Hub
+**Tagline (10 words or fewer):** Find immigration updates and calculate pathway points.
+**Repository link:** https://github.com/rishabhssworld/studio-project-1
 
 **Idea check** (write yes or no, and one short reason for each):
 
 | # | Question | Yes or no, and why |
 |---|---|---|
-| 1 | A real group of people has this problem, and I can talk to some of them | |
-| 2 | Users do something in the app (not just read) | |
-| 3 | The app needs to remember things | |
-| 4 | I can describe the first version in one sentence | |
-| 5 | I can picture at least three screens | |
-| 6 | I alone could build a simple first version | |
+| 1 | A real group of people has this problem, and I can talk to some of them | Yes. People exploring Canadian permanent residence pathways face this problem. I can speak with two people who have searched for this information. |
+| 2 | Users do something in the app (not just read) | Yes. Users will filter selection updates by program and stream, and calculate points for supported streams. |
+| 3 | The app needs to remember things | Yes. It will store programs, streams, selection updates and scoring criteria.|
+| 4 | I can describe the first version in one sentence | Yes. The first version brings selection updates and a points calculator for one supported stream into one place.|
+| 5 | I can picture at least three screens | Yes. Home, Browse Updates, and Points Calculator. |
+| 6 | I alone could build a simple first version | Yes. I will start with a small set of programs and one calculator, then expand later.|
 
-**My one-sentence description of the first version:** YOUR ANSWER HERE
+**My one-sentence description of the first version:** PR Pathway Hub will help users browse Canadian immigration selection updates by program and stream, and calculate points for one supported stream.
 
 ---
 
