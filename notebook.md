@@ -187,14 +187,16 @@ The project aims to reduce the time spent navigating between pages and make scor
 
 | Panel | Scene (where, who) | What happens | What they think or feel | Screen shown |
 |---|---|---|---|---|
-| 1 | | | | |
-| 2 | | | | |
-| 3 | | | | |
-| 4 | | | | |
+| 1 | Aman is at home using his phone after work. | He opens several pages and a PDF to find stream requirements and scoring criteria. | Frustrated by switching between pages. | Existing pages and PDF |
+| 2 | Aman opens PR Pathway Hub. | He selects “Explore pathways.” | Hopeful that he can find relevant information faster. | Home |
+| 3 | Aman chooses a program and stream. | He checks the latest selection update and browses past draws. | Glad the results are grouped together. | Browse Updates |
+| 4 | Aman opens the stream details. | He reads the requirements summary and sees a link to the official source. | More informed about what he needs to check. | Stream Details |
+| 5 | Aman opens the supported stream’s calculator. | He answers the scoring questions and selects “Show my score.” | Finds the questions easier to follow on his phone. | Points Calculator |
+| 6 | Aman reviews the result. | He sees his total and category breakdown, then identifies requirements to verify through the official source. | Clearer about his points and next steps. | Calculator results |
 
 **My storyboard images:**
 
-YOUR ANSWER HERE
+![Six-panel storyboard showing Aman finding stream information, browsing draws and calculating points](design/storyboard/storyboard.png)
 
 ---
 
@@ -204,18 +206,22 @@ YOUR ANSWER HERE
 > A Mermaid diagram (GitHub draws it). Replace the example.
 
 ```mermaid
-flowchart LR
-    Home --> PageB
-    Home --> PageC
+flowchart TD
+    Home["Home"] --> Browse["Browse Updates"]
+    Home --> About["About and Sources"]
+    Browse --> Stream["Stream Details"]
+    Stream --> Calculator["Points Calculator"]
+    Stream --> Browse
+    Calculator --> Stream
 ```
 
 ### 4.2 Wireframes
 > Four images: Home and core page, each on a phone-width and a desktop-width screen. Real words, no colour. Embed them.
 
-**Home, phone:** YOUR ANSWER HERE
-**Home, desktop:** YOUR ANSWER HERE
-**Core page, phone:** YOUR ANSWER HERE
-**Core page, desktop:** YOUR ANSWER HERE
+**Home, phone:** 	![Home page phone wireframe](design/wireframes/home-mobile.png)
+**Home, desktop:** 	![Home page desktop wireframe](design/wireframes/home-desktop.png)
+**Core page, phone:** ![Browse Updates phone wireframe](design/wireframes/core-mobile.png)
+**Core page, desktop:** ![Browse Updates desktop wireframe](design/wireframes/core-desktop.png)
 
 ### 4.3 Annotations
 > For each region of each page, name the HTML element and say why.
@@ -224,17 +230,26 @@ flowchart LR
 
 | Region | HTML element | Why this element |
 |---|---|---|
-| | | |
-| | | |
-| | | |
+| Site name and top area | header | Introduces the website. |
+| Main navigation | nav | Groups links to Home and Browse Updates. |
+| Main content | main | Identifies the page’s primary content. |
+| Introduction and main action | section | Groups the heading, introduction and Browse Updates link. |
+| Feature overview | section | Groups the three related feature cards under one heading. |
+| Individual feature card | article | Describes one feature that can be understood on its own. |
+| Bottom information | footer | Holds the prototype notice and source information. |
 
 **Core page**
 
 | Region | HTML element | Why this element |
 |---|---|---|
-| | | |
-| | | |
-| | | |
+| Site name and top area | header | Keeps the site identity consistent across pages. |
+| Main navigation | nav | Provides links between the two built pages. |
+| Main content | main | Contains the filters and selection updates. |
+| Page introduction | section | Groups the page heading, explanation and prototype notice. |
+| Program and stream filters | form | Groups labelled controls for choosing a program and stream. |
+| Latest and past updates | section | Groups the selection results under a descriptive heading. |
+| Individual selection update | article | Presents a self-contained update with its date, details and source link. |
+| Bottom information | footer | Holds the prototype notice and source information. |
 
 ### 4.4 Five-second test
 - **Who I tested (role only):** YOUR ANSWER HERE
@@ -384,7 +399,7 @@ YOUR ANSWER HERE
 3. **The hardest decision:** YOUR ANSWER HERE
 4. **Design to code:** YOUR ANSWER HERE
 5. **Risks for the next milestones:** YOUR ANSWER HERE
-6. **Tools (including any AI tool, and what I did myself):** YOUR ANSWER HERE
+6. **Tools (including any AI tool, and what I did myself):** ChatGPT helped generate a storyboard reference, and I drew the submitted version myself. Took help from ChatGPT to make wireframes
 
 ### Self-assessment
 
