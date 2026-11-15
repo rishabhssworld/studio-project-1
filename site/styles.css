@@ -3,23 +3,136 @@
    Fill in the sections in order. Commit after each one.
    ========================================================== */
 
-/* 1. DESIGN TOKENS (Part 5 decisions go here, in :root) */
+/* 1. DESIGN TOKENS */
 
+:root {
+  --color-bg: #f8fafc;
+  --color-surface: #ffffff;
+  --color-text: #1e293b;
+  --color-primary: #12304a;
+  --color-accent: #0f766e;
+  --color-accent-dark: #115e59;
+  --color-border: #64748b;
+  --color-muted: #475569;
 
-/* 2. BASE (box-sizing, body, images, links, headings) */
+  --font-heading: "Segoe UI", Arial, sans-serif;
+  --font-body: "Segoe UI", Arial, sans-serif;
 
+  --text-small: 0.875rem;
+  --text-body: 1rem;
+  --text-h3: 1.25rem;
+  --text-h2: 1.5rem;
+  --text-h1: 2rem;
 
-/* 3. HEADER AND NAV (Flexbox) */
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-6: 3rem;
 
+  --radius: 0.5rem;
+  --content-width: 75rem;
+  --line-height: 1.6;
+}
 
-/* 4. LAYOUT (Grid for cards and page layout) */
+/* 2. BASE */
 
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
-/* 5. COMPONENTS (.btn, .card, and your own reusable classes) */
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  line-height: var(--line-height);
+}
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
-/* 6. FORMS (inputs, fieldset, legend, font: inherit) */
+h1,
+h2,
+h3,
+h4 {
+  margin: 0 0 var(--space-2);
+  color: var(--color-primary);
+  font-family: var(--font-heading);
+  line-height: 1.25;
+}
 
+h1 {
+  font-size: var(--text-h1);
+}
 
-/* 7. MEDIA QUERIES (mobile first: min-width only, at least two) */
+h2 {
+  font-size: var(--text-h2);
+}
 
+h3 {
+  font-size: var(--text-h3);
+}
+
+h4 {
+  font-size: var(--text-body);
+}
+
+p {
+  margin: 0 0 var(--space-2);
+}
+
+a {
+  color: var(--color-primary);
+  text-underline-offset: 0.2em;
+  overflow-wrap: anywhere;
+}
+
+a:hover {
+  text-decoration-thickness: 0.15em;
+}
+
+a:focus-visible,
+button:focus-visible,
+select:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 4px;
+}
+
+button,
+select {
+  font: inherit;
+}
+
+main {
+  width: 100%;
+  max-width: var(--content-width);
+  margin-inline: auto;
+  padding: var(--space-4) var(--space-2);
+}
+
+main > section {
+  margin-bottom: var(--space-6);
+}
+
+section {
+  scroll-margin-top: var(--space-2);
+}
+
+section,
+article,
+form,
+li {
+  min-width: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
