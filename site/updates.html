@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PR Pathway Hub — Browse Updates</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html" class="site-name">PR Pathway Hub</a>
+
+      <nav aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="updates.html" class="active" aria-current="page">
+          Browse Updates
+        </a>
+      </nav>
+    </header>
+
+    <main>
+      <section aria-labelledby="page-heading">
+        <h1 id="page-heading">Browse selection updates</h1>
+        <p>
+          Find updates for a supported program and stream, then explore previous
+          results.
+        </p>
+        <p id="prototype-note">
+          Student prototype: all entries below are fictional examples. Filters
+          are not active, and submitting the form will not change the results.
+        </p>
+        <a href="#results">Skip to sample updates</a>
+      </section>
+
+      <div class="updates-layout">
+        <form
+          action="updates.html"
+          method="get"
+          aria-describedby="prototype-note"
+        >
+          <fieldset>
+            <legend>Filter updates</legend>
+
+            <div class="form-group">
+              <label for="program">Program</label>
+              <select id="program" name="program">
+                <option value="">All supported programs</option>
+                <option value="express-entry">Express Entry</option>
+                <option value="oinp">Ontario Immigrant Nominee Program</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="stream">Stream or selection category</label>
+              <select id="stream" name="stream">
+                <option value="">All streams and categories</option>
+                <option value="ee-example">
+                  Express Entry — example category
+                </option>
+                <option value="oinp-example">OINP — example stream</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn">Apply filters — demo</button>
+          </fieldset>
+        </form>
+
+        <section id="results" aria-labelledby="results-heading">
+          <h2 id="results-heading">Latest and past sample updates</h2>
+          <p>
+            Entries are arranged from newest to oldest within each program.
+            Numbers, dates and stream labels are illustrative. Official links
+            provide background information and do not verify these fictional
+            entries.
+          </p>
+
+          <section id="express-entry" aria-labelledby="ee-heading">
+            <h3 id="ee-heading">Express Entry</h3>
+
+            <ul class="card-grid">
+              <li>
+                <article class="card">
+                  <h4>Latest sample selection</h4>
+                  <p class="sample-label">Fictional example</p>
+
+                  <dl>
+                    <dt>Program</dt>
+                    <dd>Express Entry</dd>
+
+                    <dt>Selection category</dt>
+                    <dd>Example category</dd>
+
+                    <dt>Date</dt>
+                    <dd>
+                      <time datetime="2026-11-10">November 10, 2026</time>
+                    </dd>
+
+                    <dt>Invitations issued</dt>
+                    <dd>1,000 — sample value</dd>
+
+                    <dt>CRS cutoff</dt>
+                    <dd>500 — sample value</dd>
+                  </dl>
+
+                  <a
+                    href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry.html"
+                  >
+                    Official Express Entry information
+                  </a>
+                </article>
+              </li>
+
+              <li>
+                <article class="card">
+                  <h4>Previous sample selection</h4>
+                  <p class="sample-label">Fictional example</p>
+
+                  <dl>
+                    <dt>Program</dt>
+                    <dd>Express Entry</dd>
+
+                    <dt>Selection category</dt>
+                    <dd>Example category</dd>
+
+                    <dt>Date</dt>
+                    <dd><time datetime="2026-10-20">October 20, 2026</time></dd>
+
+                    <dt>Invitations issued</dt>
+                    <dd>800 — sample value</dd>
+
+                    <dt>CRS cutoff</dt>
+                    <dd>510 — sample value</dd>
+                  </dl>
+
+                  <a
+                    href="https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry.html"
+                  >
+                    Official Express Entry information
+                  </a>
+                </article>
+              </li>
+            </ul>
+          </section>
+
+          <section id="oinp" aria-labelledby="oinp-heading">
+            <h3 id="oinp-heading">Ontario Immigrant Nominee Program</h3>
+
+            <ul class="card-grid">
+              <li>
+                <article class="card">
+                  <h4>Sample Ontario selection update</h4>
+                  <p class="sample-label">Fictional example</p>
+
+                  <dl>
+                    <dt>Program</dt>
+                    <dd>Ontario Immigrant Nominee Program</dd>
+
+                    <dt>Stream</dt>
+                    <dd>Example stream</dd>
+
+                    <dt>Date</dt>
+                    <dd><time datetime="2026-11-05">November 5, 2026</time></dd>
+
+                    <dt>Invitations issued</dt>
+                    <dd>200 — sample value</dd>
+
+                    <dt>Stream score cutoff</dt>
+                    <dd>80 — sample value; not a CRS score</dd>
+                  </dl>
+
+                  <a
+                    href="https://www.ontario.ca/page/ontario-immigrant-nominee-program-oinp"
+                  >
+                    Official OINP information
+                  </a>
+                </article>
+              </li>
+            </ul>
+          </section>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <p>PR Pathway Hub — Student prototype.</p>
+      <p>Independent project. Not affiliated with the Government of Canada.</p>
+    </footer>
+  </body>
+</html>
