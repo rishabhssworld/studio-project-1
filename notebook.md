@@ -26,14 +26,14 @@
 | 5 | I can picture at least three screens | Yes. Home, Browse Updates, and Points Calculator. |
 | 6 | I alone could build a simple first version | Yes. I will start with a small set of programs and one calculator, then expand later.|
 
-**My one-sentence description of the first version:** PR Pathway Hub will help users browse Canadian immigration selection updates by program and stream, and calculate points for one supported stream.
+**My one-sentence description of the first version:** PR Pathway Hub will help users find relevant Canadian permanent residence pathway information, browse selection updates, and calculate points for supported streams.
 
 ---
 
 ## Part 1: Define the Problem
 
 ### 1.1 Problem statement
-> Describe a problem, not a solution. Do not mention an app, a website or a feature. Use: "[Who] struggles to [do what] because [obstacle], which leads to [consequence]." Then expand to three to five sentences.
+>People exploring Canadian permanent residence pathways struggle to find relevant program information, selection updates and scoring criteria because these details are spread across different websites, pages and documents. Finding the requirements and latest updates for a particular stream often involves opening several links and scrolling through unrelated information. Some scoring criteria also require users to read tables and manually calculate their points. This makes the process time-consuming and can lead to missed information or calculation mistakes.
 
 YOUR ANSWER HERE
 
@@ -42,53 +42,63 @@ YOUR ANSWER HERE
 
 **Conversation A**
 
-- **Who (role only):** YOUR ANSWER HERE
-- **Quote 1:** "YOUR ANSWER HERE"
-- **Quote 2:** "YOUR ANSWER HERE"
-- **What surprised me:** YOUR ANSWER HERE
+- **Who (role only):**  Former international student who completed two one-year certificate programs in Canada.
+- **Quote 1:** "It is difficult to locate exactly what I need on the official website."
+- **Quote 2:** "There's a CRS score calculator for express entry I would like the same for OINP, it would make things very easy for all the candidates, as while calculating our own we make mistakes sometimes."
+- **What surprised me:** The main concern was understanding whether his education met the eligibility requirements. Calculating points manually was manageable, but answering questions with radio buttons would have been more convenient on a phone.
 
 **Conversation B**
 
-- **Who (role only):** YOUR ANSWER HERE
-- **Quote 1:** "YOUR ANSWER HERE"
-- **Quote 2:** "YOUR ANSWER HERE"
-- **What surprised me:** YOUR ANSWER HERE
+- **Who (role only):** Work permit holder researching permanent residence pathways.
+- **Quote 1:** "I want to see the requirements and recent draws for the same stream without opening several pages."
+- **Response summary (paraphrased):** He wanted requirements and recent draw results for a stream in one place. He also preferred a calculator that explains how each answer contributes to the total score.
+- **Quote 2:** "A calculator that explains where each point comes from would help me understand my total."
+- **What surprised me:** I expected him to mainly want a final score, but he also wanted to understand how each answer contributed to his points.
 
 **Revised problem statement** (re-read 1.1 after your conversations, then write the revised version, or write "no change" and say why):
 
-YOUR ANSWER HERE
+
+People exploring Canadian permanent residence pathways struggle to find relevant requirements, selection updates and scoring criteria because the information is spread across different pages and documents. Finding details for a particular stream often requires opening several links and scrolling through unrelated content. Manually calculating points can also lead to mistakes, especially on a phone. Users need to understand both their total points and how each answer contributes to that total.
+
 
 ### 1.3 Persona
 > A made-up person based on what you heard. Their frustrations should echo your quotes.
 
-- **Name, age or life stage, role:** YOUR ANSWER HERE
-- **Context (when and where the problem happens):** YOUR ANSWER HERE
-- **Three goals:** 1) YOUR ANSWER HERE 2) YOUR ANSWER HERE 3) YOUR ANSWER HERE
-- **Three frustrations:** 1) YOUR ANSWER HERE 2) YOUR ANSWER HERE 3) YOUR ANSWER HERE
-- **Technology comfort and devices:** YOUR ANSWER HERE
-- **A quote that sums them up:** "YOUR ANSWER HERE"
+- **Name, age or life stage, role:** Aman, 25, a former international student who now holds a work permit.
+- **Context (when and where the problem happens):** Aman researches permanent residence pathways on his phone after work. He wants to understand which streams match his education and work experience.
+- **Three goals:** 1) Find the requirements for a specific stream. 2) Check recent draws and selection updates. 3) Calculate his points and understand the breakdown.
+- **Three frustrations:** 1) Opening several pages to find relevant information. 2) Reading scoring tables in PDFs on his phone. 3) Manually adding points and worrying about mistakes.
+- **Technology comfort and devices:** Medium. He is comfortable browsing websites and completing online forms, mainly using his smartphone.
+- **A quote that sums them up:** “I want to find the requirements and understand my points without jumping between pages.”
 
 ### 1.4 What already exists
 > Two or three alternatives, including "doing it by hand" if that is what people really do.
 
 | Alternative | What it does well | Where it falls short for my persona |
 |---|---|---|
-| | | |
-| | | |
+| Official immigration websites | Provide information directly from the authorities responsible for each pathway. | In our search, finding the relevant stream requirements and scoring information involved opening several links and scrolling through pages. |
+| PDF scoring sheets and a phone calculator | Let users read the scoring criteria and manually calculate their points. | Switching between the PDF and calculator on a phone is inconvenient, and manual addition can lead to mistakes. |
+| Asking friends who have researched PR pathways | Provides a familiar starting point and lets users ask questions. | Their experiences may involve different circumstances, so Aman still needs to check the official requirements for himself. |
 
 ### 1.5 Success criteria
 > Three statements you could actually check.
 
-1. YOUR ANSWER HERE
-2. YOUR ANSWER HERE
-3. YOUR ANSWER HERE
+1. At least four out of five test users can find a selected stream’s requirements and official-source link within one minute.
+
+2. At least four out of five test users can find the latest recorded selection update for a chosen stream within three clicks from the Home page.
+
+3. For the first supported points calculator, all five prepared test cases produce the expected total and category breakdown calculated from the official scoring criteria.
 
 ### 1.6 Abstract (150 to 250 words)
 > Three short parts: the problem and who has it, what you are building, and why it matters.
 
-YOUR ANSWER HERE
+People exploring Canadian permanent residence pathways often need to check program requirements, recent selection updates and scoring criteria. This information can be difficult to locate when it is spread across different pages and documents. In conversations with potential users, finding stream-specific information and manually calculating points on a phone were concerns. Users also wanted to understand how their answers contributed to their total points.
 
-**Word count:** YOUR ANSWER HERE
+PR Pathway Hub is a planned website that brings these tasks together. Users will choose a program and stream to view a concise requirements summary, current and past selection updates and links to official sources. A guided points calculator will initially support one stream and show both the total score and a category breakdown. The first milestone will provide a responsive Home page and Browse Updates page using HTML and CSS. Working filters, calculations and data storage will be added in later milestones.
+
+The project aims to reduce the time spent navigating between pages and make scoring information easier to understand on mobile devices. Its initial scope will remain small so that information and scoring rules can be checked against official sources. Calculated points will be presented separately from eligibility requirements, since a points total alone does not establish eligibility or guarantee an invitation.
+
+**Word count:** 208
 
 ---
 
@@ -99,35 +109,49 @@ YOUR ANSWER HERE
 
 | Feature | Group (Must, Should, Could, Won't) | Because |
 |---|---|---|
-| | | |
-| | | |
-| | | |
-| | | |
-| | | |
-| | | |
-| | | |
-| | | |
-| | | |
-| | | |
+| Feature | Group (Must, Should, Could, Won't) | Because |
+|---|---|---|
+| Browse supported programs and streams | Must | Users need to locate a specific stream to meet success criterion 1. |
+| View concise stream requirements with official-source links | Must | Users need to find requirements and verify their source within one minute, as measured by success criterion 1. |
+| View selection updates organized by program and stream | Must | Users need to find the latest recorded update within three clicks, as measured by success criterion 2. |
+| View current and past selection updates organized by program and stream | Must | Users need to find the latest recorded update within three clicks, as measured by success criterion 2, and browse previous results for context. |
+| Calculate points for one supported stream | Must | The calculator must produce the expected totals for the test cases in success criterion 3. |
+| View a category breakdown of calculated points | Must | Users need to understand where their points come from, and the breakdown must match success criterion 3. |
+| Show when pathway information was last checked | Should | Users should be able to judge how recently the information was reviewed. |
+| Filter updates by date | Should | This would help users narrow a longer list of updates. |
+| Save favourite streams on the device | Could | This would make repeat visits more convenient. |
+| Compare two streams side by side | Could | This could help users explore differences after reading individual stream details. |
+| Send notifications about new updates | Won't | Notifications add complexity beyond this term's scope. |
+| Predict future draw dates or cutoff scores | Won't | Reliable predictions require data and evaluation beyond this project's scope. |
+| Support calculators for every Canadian PR stream | Won't | Each scoring system requires separate implementation and verification, so the first version will support one. |
 
 ### 2.2 Main user flow
 > Five to eight numbered steps, each naming the screen where it happens.
 
-1. YOUR ANSWER HERE
-2. YOUR ANSWER HERE
-3. YOUR ANSWER HERE
-4. YOUR ANSWER HERE
-5. YOUR ANSWER HERE
+1. Aman opens the Home page and selects “Explore pathways.”
+2. On the Browse Updates page, he chooses a supported program and stream.
+3. On the Browse Updates page, he views the latest recorded draw or selection update, then browses past results for that stream.
+4. On the Stream Details page, he reads the requirements summary and follows the official-source link if he needs more detail.
+5. He selects “Calculate my points” and opens the Points Calculator page for the supported stream.
+6. On the Points Calculator page, he answers the scoring questions and selects “Show my score.”
+7. On the Points Calculator page, he reviews his total and category breakdown, understanding that the score alone does not confirm eligibility or guarantee an invitation.
 
 ### 2.3 Data sketch
 > Two to four things your app remembers, with three to five details each. No SQL. Then one sentence for each relationship.
 
 | Thing | Details it remembers |
 |---|---|
-| | |
-| | |
+| Program | Program name, province or region, description, official-source link |
+| Stream | Parent program, stream name, requirements summary, official-source link, last-checked date |
+| Selection update | Related stream, selection date, invitations issued if published, cutoff score if applicable, official-source link |
+| Scoring criterion | Related stream, category name, question text, answer options with their points, official-source link |
 
-**Relationships:** YOUR ANSWER HERE
+**Relationships:**
+
+- A program can contain several streams.
+- A stream can have many selection updates, including current and past draws.
+- A stream can have several scoring criteria.
+- Each scoring criterion provides a question and answer options used by that stream’s points calculator.
 
 ### 2.4 Page list
 > Every page the finished project might have (at least five). Mark the two you build in this milestone.
@@ -135,24 +159,25 @@ YOUR ANSWER HERE
 | Page | Purpose | Built in Milestone 1? |
 |---|---|---|
 | Home | | Yes |
-| | | Yes |
-| | | No |
-| | | No |
-| | | No |
+| Home | Introduce the website and guide users to pathway information, selection updates and calculators. | Yes |
+| Browse Updates | Let users choose a program and stream, and browse current and past draws or selection updates. | Yes |
+| Stream Details | Show a stream’s requirements summary, official-source links, last-checked date and relevant calculator link. | No |
+| Points Calculator | Ask scoring questions for a supported stream and display the total with a category breakdown. | No |
+| About and Sources | Explain the website’s scope, sources, update process and the difference between points and eligibility. | No |
 
 ### 2.5 GitHub issues
 > Paste the links to your five issues.
 
-1. Build the home page and the core page (HTML): https://github.com/...
-2. Style the site: palette, responsive layout and components: https://github.com/...
-3. Feature (Must): https://github.com/...
-4. Feature (Must): https://github.com/...
-5. Feature (Must): https://github.com/...
+1. Build the home page and the core page (HTML): https://github.com/rishabhssworld/studio-project-1/issues/1
+2. Style the site: palette, responsive layout and components: https://github.com/rishabhssworld/studio-project-1/issues/2
+3. Feature: browse current and past selection updates: https://github.com/rishabhssworld/studio-project-1/issues/3
+4. Feature: view stream requirements and official sources: https://github.com/rishabhssworld/studio-project-1/issues/4
+5. Feature: calculate points with a category breakdown: https://github.com/rishabhssworld/studio-project-1/issues/5
 
 ### 2.6 Abstract check
 > Re-read your abstract from 1.6 against your Must-haves. Edit it if it no longer matches (keep it 150 to 250 words), then say what you changed.
 
-- **What I changed (or why nothing):** YOUR ANSWER HERE
+- **What I changed (or why nothing):** I clarified that users can browse current and past selection updates. The abstract matches my Must-have features: browsing programs and streams, viewing requirements with official sources, and calculating points for one supported stream with a category breakdown.
 
 ---
 
