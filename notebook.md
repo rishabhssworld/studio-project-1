@@ -366,7 +366,7 @@ flowchart TD
 ### 7.4 CSS validator
 **What the W3C CSS Validator said (and whether any warning matters):** The W3C CSS Validator reported no errors and four warnings. Three warnings concern its inability to statically check CSS variables. The fourth notes that the button hover background and border have the same colour, which is intentional. These warnings do not require changes.
 
-![CSS validation showing no errors and four warnings](screenshots/css-validation.png)
+![CSS validation showing no errors and four warnings](screenshots/CSS-validation.png)
 
 ### 7.5 Screenshots
 > Embed them: `screenshots/home-375.png`, `screenshots/home-1280.png`, `screenshots/core-375.png`, `screenshots/core-1280.png`.
