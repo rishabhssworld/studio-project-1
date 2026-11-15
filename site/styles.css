@@ -3,23 +3,383 @@
    Fill in the sections in order. Commit after each one.
    ========================================================== */
 
-/* 1. DESIGN TOKENS (Part 5 decisions go here, in :root) */
+/* 1. DESIGN TOKENS */
 
+:root {
+  --color-bg: #f8fafc;
+  --color-surface: #ffffff;
+  --color-text: #1e293b;
+  --color-primary: #12304a;
+  --color-accent: #0f766e;
+  --color-accent-dark: #115e59;
+  --color-border: #64748b;
+  --color-muted: #475569;
 
-/* 2. BASE (box-sizing, body, images, links, headings) */
+  --font-heading: "Segoe UI", Arial, sans-serif;
+  --font-body: "Segoe UI", Arial, sans-serif;
 
+  --text-small: 0.875rem;
+  --text-body: 1rem;
+  --text-h3: 1.25rem;
+  --text-h2: 1.5rem;
+  --text-h1: 2rem;
 
-/* 3. HEADER AND NAV (Flexbox) */
+  --space-1: 0.5rem;
+  --space-2: 1rem;
+  --space-3: 1.5rem;
+  --space-4: 2rem;
+  --space-6: 3rem;
 
+  --radius: 0.5rem;
+  --content-width: 75rem;
+  --line-height: 1.6;
 
-/* 4. LAYOUT (Grid for cards and page layout) */
+  --focus-offset: 0.25rem;
+  --control-height: 2.75rem;
+  --underline-offset: 0.2em;
+  --underline-hover: 0.15em;
+}
 
+/* 2. BASE */
 
-/* 5. COMPONENTS (.btn, .card, and your own reusable classes) */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  background: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  line-height: var(--line-height);
+}
 
-/* 6. FORMS (inputs, fieldset, legend, font: inherit) */
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
 
+h1,
+h2,
+h3,
+h4 {
+  margin: 0 0 var(--space-2);
+  color: var(--color-primary);
+  font-family: var(--font-heading);
+  line-height: 1.25;
+}
 
-/* 7. MEDIA QUERIES (mobile first: min-width only, at least two) */
+h1 {
+  font-size: var(--text-h1);
+}
 
+h2 {
+  font-size: var(--text-h2);
+}
+
+h3 {
+  font-size: var(--text-h3);
+}
+
+h4 {
+  font-size: var(--text-body);
+}
+
+p {
+  margin: 0 0 var(--space-2);
+}
+
+a {
+  color: var(--color-primary);
+  text-underline-offset: var(--underline-offset);
+  overflow-wrap: anywhere;
+}
+
+a:hover {
+  text-decoration-thickness: var(--underline-hover);
+}
+
+a:focus-visible,
+button:focus-visible,
+select:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: var(--focus-offset);
+}
+
+button,
+select {
+  font: inherit;
+}
+
+main {
+  width: 100%;
+  max-width: var(--content-width);
+  margin-inline: auto;
+  padding: var(--space-4) var(--space-2);
+}
+
+main > section {
+  margin-bottom: var(--space-6);
+}
+
+section {
+  scroll-margin-top: var(--space-2);
+}
+
+section,
+article,
+form,
+li {
+  min-width: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* 3. HEADER AND NAVIGATION */
+
+body > header {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2);
+  padding: var(--space-3) var(--space-2);
+  background: var(--color-surface);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.site-name {
+  color: var(--color-primary);
+  font-family: var(--font-heading);
+  font-size: var(--text-h2);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-1);
+}
+
+nav a {
+  display: inline-block;
+  padding: var(--space-1) var(--space-2);
+  border-radius: var(--radius);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+nav a.active {
+  background: var(--color-primary);
+  color: var(--color-surface);
+  text-decoration: underline;
+}
+
+/* FOOTER */
+
+body > footer {
+  padding: var(--space-4) var(--space-2);
+  background: var(--color-surface);
+  color: var(--color-muted);
+  border-top: 1px solid var(--color-border);
+  font-size: var(--text-small);
+  text-align: center;
+}
+
+body > footer p:last-child {
+  margin-bottom: 0;
+}
+
+/* 4. LAYOUT */
+
+.card-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-3);
+  list-style: none;
+}
+
+.card-grid > li {
+  display: flex;
+}
+
+.updates-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-4);
+  align-items: start;
+}
+
+#results > section {
+  margin-top: var(--space-4);
+}
+
+/* 5. REUSABLE COMPONENTS */
+
+.card {
+  width: 100%;
+  padding: var(--space-3);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  overflow-wrap: anywhere;
+}
+
+.card > :last-child {
+  margin-bottom: 0;
+}
+
+.btn {
+  display: inline-block;
+  max-width: 100%;
+  padding: var(--space-1) var(--space-2);
+  background: var(--color-accent);
+  color: var(--color-surface);
+  border: 2px solid var(--color-accent);
+  border-radius: var(--radius);
+  font-weight: 600;
+  line-height: var(--line-height);
+  text-align: center;
+  text-decoration: none;
+  white-space: normal;
+  overflow-wrap: anywhere;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: var(--color-accent-dark);
+  border-color: var(--color-accent-dark);
+  text-decoration: underline;
+}
+
+main > section:first-child .btn {
+  margin-right: var(--space-2);
+  margin-bottom: var(--space-2);
+}
+
+.sample-label {
+  display: inline-block;
+  padding: var(--space-1) var(--space-2);
+  color: var(--color-muted);
+  background: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  font-size: var(--text-small);
+  font-weight: 600;
+}
+
+dl {
+  margin: 0 0 var(--space-3);
+}
+
+dt {
+  margin-top: var(--space-2);
+  font-weight: 700;
+}
+
+dd {
+  margin: 0;
+  color: var(--color-muted);
+}
+
+/* 6. FORMS */
+
+form {
+  padding: var(--space-3);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+fieldset {
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+legend {
+  margin-bottom: var(--space-3);
+  padding: 0;
+  color: var(--color-primary);
+  font-size: var(--text-h3);
+  font-weight: 700;
+}
+
+.form-group {
+  margin-bottom: var(--space-3);
+}
+
+label {
+  display: block;
+  margin-bottom: var(--space-1);
+  font-weight: 600;
+}
+
+select {
+  display: block;
+  width: 100%;
+  min-width: 0;
+  min-height: var(--control-height);
+  padding: var(--space-1);
+  background: var(--color-surface);
+  color: var(--color-text);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+form .btn {
+  width: 100%;
+}
+
+/* 7. MOBILE-FIRST MEDIA QUERIES */
+
+@media (min-width: 48rem) {
+  body > header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: var(--space-4);
+  }
+
+  main {
+    padding: var(--space-6) var(--space-4);
+  }
+
+  .card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  /* Result cards stay readable beside the filter sidebar. */
+  #results .card-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .updates-layout {
+    grid-template-columns: minmax(0, 17rem) minmax(0, 1fr);
+  }
+}
+
+@media (min-width: 75rem) {
+  #features-heading + .card-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  #results .card-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .card {
+    padding: var(--space-4);
+  }
+}

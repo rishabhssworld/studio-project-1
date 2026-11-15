@@ -261,46 +261,46 @@ flowchart TD
 ## Part 5: Design Decisions
 
 ### 5.1 Mood
-- **Three words:** YOUR ANSWER HERE
-- **Why they fit my persona:** YOUR ANSWER HERE
+- **Three words:** Clear, calm, organized.
+- **Why they fit my persona:** Aman wants to find relevant information without feeling overwhelmed. Clear headings, readable text and consistent layouts will help him scan requirements and draw results on his phone. A calm design will keep the focus on the information and his next action.
 
 ### 5.2 Palette
 
 | Role | Variable | Hex |
 |---|---|---|
-| Page background | `--color-bg` | |
-| Card and header surface | `--color-surface` | |
-| Body text | `--color-text` | |
-| Headings and links | `--color-primary` | |
-| Buttons and highlights | `--color-accent` | |
-| Button hover | `--color-accent-dark` | |
-| Borders | `--color-border` | |
-| Secondary text | `--color-muted` | |
+| Page background | `--color-bg` | #F8FAFC |
+| Card and header surface | `--color-surface` | #FFFFFF |
+| Body text | `--color-text` | #1E293B |
+| Headings and links | `--color-primary` | #12304A |
+| Buttons and highlights | `--color-accent` | #0F766E |
+| Button hover | `--color-accent-dark` | #115E59 |
+| Borders | `--color-border` | #64748B |
+| Secondary text | `--color-muted` | #475569 |
 
 ### 5.3 Contrast table
 > At least six real pairs. Every normal-text pair must be 4.5 : 1 or better (3 : 1 for large text). Use https://webaim.org/resources/contrastchecker/
 
 | Text colour | On | What it is | Ratio | Passes? |
 |---|---|---|---|---|
-| | | Body text on the page | | |
-| | | Heading on a card | | |
-| | | Button text | | |
-| | | Button text on hover | | |
-| | | Muted text on a card | | |
-| | | | | |
+| #1E293B | #F8FAFC | Body text on the page | 13.98:1 | Yes |
+| #12304A | #FFFFFF | Heading on a card | 13.57:1 | Yes |
+| #FFFFFF | #0F766E | Button text | 5.47:1 | Yes |
+| #FFFFFF | #115E59 | Button text on hover | 7.58:1 | Yes |
+| #475569 | #FFFFFF | Muted text on a card | 7.58:1 | Yes |
+| #12304A | #F8FAFC | Links on the page background | 12.97:1 | Yes |
 
 ### 5.4 Type and spacing
-- **Heading font stack:** YOUR ANSWER HERE
-- **Body font stack:** YOUR ANSWER HERE
-- **Type scale (`h1`, `h2`, `h3`, body, in rem):** YOUR ANSWER HERE
-- **Spacing unit:** YOUR ANSWER HERE
-- **Corner radius:** YOUR ANSWER HERE
+- **Heading font stack:** "Segoe UI", Arial, sans-serif
+- **Body font stack:** "Segoe UI", Arial, sans-serif
+- **Type scale (`h1`, `h2`, `h3`, body, in rem):** h1: 2rem; h2: 1.5rem; h3: 1.25rem; body: 1rem
+- **Spacing unit:** 0.5rem, with multiples used for gaps, padding and margins.
+- **Corner radius:** 0.5rem
 
 ### 5.5 Pace check
 > Halfway through your time, run `git log --format='%ad' --date=short | sort -u | wc -l`. You need commits on at least four different days.
 
 ```text
-(paste the number here)
+2
 ```
 
 ---
@@ -312,25 +312,30 @@ flowchart TD
 
 | Wireframe region | Element in my HTML | File |
 |---|---|---|
-| | | |
-| | | |
-| | | |
+| Site identity and navigation | header and nav | site/index.html and site/updates.html |
+| Home introduction | main > section with h1 | site/index.html |
+| Named pathway cards | section > ul > li > article | site/index.html |
+| Feature cards | section > ul > li > article | site/index.html |
+| Filter controls | form > fieldset with labelled select elements | site/updates.html |
+| Latest and past update groups | section with nested program sections | site/updates.html |
+| Individual selection updates | ul > li > article with dl | site/updates.html |
+| Bottom information | footer | site/index.html and site/updates.html |
 
 ### 6.2 Checks
-- [ ] Both pages have exactly one `h1` and headings in order
-- [ ] Both pages have the viewport meta tag and a unique `<title>`
-- [ ] The `nav` links to both pages and marks the current one with `class="active"`
-- [ ] There is a list of repeated items, each an `article`
-- [ ] The form has a `label`, `id` and `name` for every control
-- [ ] Informative images have real alt text and decorative ones use `alt=""`
-- [ ] No lorem ipsum anywhere
-- [ ] I used at least one absolute, one relative and one same-page link
+- [✓] Both pages have exactly one `h1` and headings in order
+- [✓] Both pages have the viewport meta tag and a unique `<title>`
+- [✓] The `nav` links to both pages and marks the current one with `class="active"`
+- [✓] There is a list of repeated items, each an `article`
+- [✓] The form has a `label`, `id` and `name` for every control
+- [ ] Informative images have real alt text and decorative ones use `alt=""`. Neither page currently contains images, so alt text is not applicable.
+- [✓] No lorem ipsum anywhere
+- [✓] I used at least one absolute, one relative and one same-page link
 
 ### 6.3 Validator results
-- **Home page:** screenshot `screenshots/home-validation.png`
-- **Core page:** screenshot `screenshots/core-validation.png`
+- **Home page:** ![Home HTML validation: no errors or warnings](screenshots/home-validation.png)
+- **Core page:** ![Browse Updates HTML validation: no errors or warnings](screenshots/core-validation.png)
 
-**Errors I met and fixed (at least one):** YOUR ANSWER HERE
+**Errors I met and fixed (at least one):** Both pages passed validation with no errors or warnings on the first check. The validator displayed informational notices about trailing slashes on meta and link elements.
 
 ---
 
@@ -341,35 +346,45 @@ flowchart TD
 
 | Page | What matches | What changed, and why |
 |---|---|---|
-| Home | | |
-| Core page | | |
+| Home | The introduction, named pathway links, feature cards and footer follow the updated wireframes. Cards stack on phones and form columns on larger screens. | I added an About this prototype section to explain which features are planned and distinguish points from eligibility. |
+| Core page | Filters appear above results on phones and beside results on desktop. Updates are grouped by program. | I added clear fictional-example labels and explanatory text so sample entries cannot be mistaken for verified draw results. |
 
 ### 7.2 Checks
-- [ ] Every colour, font, spacing and radius comes from `:root`
-- [ ] No `!important`, no inline `style`
-- [ ] Mobile first, with at least two `min-width` media queries
-- [ ] Flexbox is used for the header and nav, and Grid for the cards
-- [ ] `.btn` and `.card` (or my own reusable classes) are used everywhere
-- [ ] There is no sideways page scroll at 375px
-- [ ] The page still looks decent with Google Fonts blocked
+- [x] Every colour, font, spacing and radius comes from `:root`
+- [x] No `!important`, no inline `style`
+- [x] Mobile first, with at least two `min-width` media queries
+- [x] Flexbox is used for the header and nav, and Grid for the cards
+- [x] `.btn` and `.card` (or my own reusable classes) are used everywhere
+- [x] There is no sideways page scroll at 375px
+- [x] The page still looks decent with Google Fonts blocked
+
 
 ### 7.3 Contrast re-check
-**Pairs I re-tested on the built page, and any I had to change:** YOUR ANSWER HERE
+**Pairs I re-tested on the built page, and any I had to change:** I rechecked body text, card headings, button text, hover button text, muted card text and page links using the colours applied in the stylesheet. Their contrast ratios remain those recorded in Part 5.3, so no colour changes were needed.
+
 
 ### 7.4 CSS validator
-**What the W3C CSS Validator said (and whether any warning matters):** YOUR ANSWER HERE
+**What the W3C CSS Validator said (and whether any warning matters):** The W3C CSS Validator reported no errors and four warnings. Three warnings concern its inability to statically check CSS variables. The fourth notes that the button hover background and border have the same colour, which is intentional. These warnings do not require changes.
+
+![CSS validation showing no errors and four warnings](screenshots/css-validation.png)
 
 ### 7.5 Screenshots
 > Embed them: `screenshots/home-375.png`, `screenshots/home-1280.png`, `screenshots/core-375.png`, `screenshots/core-1280.png`.
 
-YOUR ANSWER HERE
+![Home at 375px](screenshots/home-375.png)
+
+![Home at 1280px](screenshots/home-1280.png)
+
+![Browse Updates at 375px](screenshots/core-375.png)
+
+![Browse Updates at 1280px](screenshots/core-1280.png)
 
 ---
 
 ## Part 8: Git and GitHub
 
 **Repository:** https://github.com/...
-**Issue #1 (closed):** https://github.com/...
+**Issue #1 (closed):** https://github.com/rishabhssworld/studio-project-1/pull/6
 **Issue #2 (closed):** https://github.com/...
 **Merged Pull Request for HTML:** https://github.com/...
 **Merged Pull Request for CSS:** https://github.com/...
