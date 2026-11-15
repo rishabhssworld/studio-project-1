@@ -33,6 +33,11 @@
   --radius: 0.5rem;
   --content-width: 75rem;
   --line-height: 1.6;
+
+  --focus-offset: 0.25rem;
+  --control-height: 2.75rem;
+  --underline-offset: 0.2em;
+  --underline-hover: 0.15em;
 }
 
 /* 2. BASE */
@@ -90,19 +95,19 @@ p {
 
 a {
   color: var(--color-primary);
-  text-underline-offset: 0.2em;
+  text-underline-offset: var(--underline-offset);
   overflow-wrap: anywhere;
 }
 
 a:hover {
-  text-decoration-thickness: 0.15em;
+  text-decoration-thickness: var(--underline-hover);
 }
 
 a:focus-visible,
 button:focus-visible,
 select:focus-visible {
   outline: 3px solid var(--color-primary);
-  outline-offset: 4px;
+  outline-offset: var(--focus-offset);
 }
 
 button,
@@ -325,7 +330,7 @@ select {
   display: block;
   width: 100%;
   min-width: 0;
-  min-height: 2.75rem;
+  min-height: var(--control-height);
   padding: var(--space-1);
   background: var(--color-surface);
   color: var(--color-text);
