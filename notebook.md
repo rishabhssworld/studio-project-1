@@ -252,9 +252,9 @@ flowchart TD
 | Bottom information | footer | Holds the prototype notice and source information. |
 
 ### 4.4 Five-second test
-- **Who I tested (role only):** YOUR ANSWER HERE
-- **What they said the page is for, and what they would do first:** YOUR ANSWER HERE
-- **What I changed because of it (or why I changed nothing):** YOUR ANSWER HERE
+- **Who I tested (role only):** Work permit holder in Canada researching permanent residence pathways.
+- **What they said the page is for, and what they would do first:** They understood it as a website that brings PR pathway information together for people inside and outside Canada. They would first click a pathway they already knew, then explore other options.
+- **What I changed because of it (or why I changed nothing):** Their response suggested that familiar pathway names would help users get started. I added clearly named pathway links to the Home wireframe so users could choose a familiar option before exploring others.
 
 ---
 
