@@ -1,7 +1,5 @@
 # PR Pathway Hub
 
-> Replace this stub in Part 8. It must include: the project name and tagline, the problem in one or two sentences, a screenshot of your home page, how to view the site, what is built so far and what comes next (link your open issues), your folder structure, and the tools you used.
-
 **Tagline:** Find immigration updates and calculate pathway points.
 
 ## The problem
