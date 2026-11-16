@@ -1,11 +1,7 @@
 # Studio Project 1, Milestone 1: Project Notebook
 
-> **How to use this notebook.** Replace every line that says `YOUR ANSWER HERE` (and delete the grey instruction lines that start with `>`) with your own work. Keep the headings. Commit after each part. Do not leave any instruction text in your final version.
-
 **Student name:** Rishabh Bhutani
 **GitHub username:** rishabhssworld
-
-> This notebook is my own individual work. I did my own research, sketches, writing and code.
 
 ---
 
@@ -33,12 +29,11 @@
 ## Part 1: Define the Problem
 
 ### 1.1 Problem statement
->People exploring Canadian permanent residence pathways struggle to find relevant program information, selection updates and scoring criteria because these details are spread across different websites, pages and documents. Finding the requirements and latest updates for a particular stream often involves opening several links and scrolling through unrelated information. Some scoring criteria also require users to read tables and manually calculate their points. This makes the process time-consuming and can lead to missed information or calculation mistakes.
+People exploring Canadian permanent residence pathways struggle to find relevant program information, selection updates and scoring criteria because these details are spread across different websites, pages and documents. Finding the requirements and latest updates for a particular stream often involves opening several links and scrolling through unrelated information. Some scoring criteria also require users to read tables and manually calculate their points. This makes the process time-consuming and can lead to missed information or calculation mistakes.
 
-YOUR ANSWER HERE
 
 ### 1.2 Evidence from real people
-> Two short conversations. Record a role (not a full name), two exact quotes each, and one surprise. Ask permission before quoting. Do not invent quotes.
+Two short conversations. Record a role (not a full name), two exact quotes each, and one surprise. Ask permission before quoting. Do not invent quotes.
 
 **Conversation A**
 
@@ -62,7 +57,7 @@ People exploring Canadian permanent residence pathways struggle to find relevant
 
 
 ### 1.3 Persona
-> A made-up person based on what you heard. Their frustrations should echo your quotes.
+
 
 - **Name, age or life stage, role:** Aman, 25, a former international student who now holds a work permit.
 - **Context (when and where the problem happens):** Aman researches permanent residence pathways on his phone after work. He wants to understand which streams match his education and work experience.
@@ -72,7 +67,7 @@ People exploring Canadian permanent residence pathways struggle to find relevant
 - **A quote that sums them up:** “I want to find the requirements and understand my points without jumping between pages.”
 
 ### 1.4 What already exists
-> Two or three alternatives, including "doing it by hand" if that is what people really do.
+
 
 | Alternative | What it does well | Where it falls short for my persona |
 |---|---|---|
@@ -81,7 +76,7 @@ People exploring Canadian permanent residence pathways struggle to find relevant
 | Asking friends who have researched PR pathways | Provides a familiar starting point and lets users ask questions. | Their experiences may involve different circumstances, so Aman still needs to check the official requirements for himself. |
 
 ### 1.5 Success criteria
-> Three statements you could actually check.
+
 
 1. At least four out of five test users can find a selected stream’s requirements and official-source link within one minute.
 
@@ -90,7 +85,7 @@ People exploring Canadian permanent residence pathways struggle to find relevant
 3. For the first supported points calculator, all five prepared test cases produce the expected total and category breakdown calculated from the official scoring criteria.
 
 ### 1.6 Abstract (150 to 250 words)
-> Three short parts: the problem and who has it, what you are building, and why it matters.
+
 
 People exploring Canadian permanent residence pathways often need to check program requirements, recent selection updates and scoring criteria. This information can be difficult to locate when it is spread across different pages and documents. In conversations with potential users, finding stream-specific information and manually calculating points on a phone were concerns. Users also wanted to understand how their answers contributed to their total points.
 
@@ -105,7 +100,7 @@ The project aims to reduce the time spent navigating between pages and make scor
 ## Part 2: Decide What to Build
 
 ### 2.1 Scope (MoSCoW)
-> At most five Musts, each with a "because" tied to a success criterion. At least two Won'ts. Ten to fourteen features in total.
+
 
 | Feature | Group (Must, Should, Could, Won't) | Because |
 |---|---|---|
@@ -126,7 +121,7 @@ The project aims to reduce the time spent navigating between pages and make scor
 | Support calculators for every Canadian PR stream | Won't | Each scoring system requires separate implementation and verification, so the first version will support one. |
 
 ### 2.2 Main user flow
-> Five to eight numbered steps, each naming the screen where it happens.
+
 
 1. Aman opens the Home page and selects “Explore pathways.”
 2. On the Browse Updates page, he chooses a supported program and stream.
@@ -137,7 +132,7 @@ The project aims to reduce the time spent navigating between pages and make scor
 7. On the Points Calculator page, he reviews his total and category breakdown, understanding that the score alone does not confirm eligibility or guarantee an invitation.
 
 ### 2.3 Data sketch
-> Two to four things your app remembers, with three to five details each. No SQL. Then one sentence for each relationship.
+
 
 | Thing | Details it remembers |
 |---|---|
@@ -154,7 +149,7 @@ The project aims to reduce the time spent navigating between pages and make scor
 - Each scoring criterion provides a question and answer options used by that stream’s points calculator.
 
 ### 2.4 Page list
-> Every page the finished project might have (at least five). Mark the two you build in this milestone.
+
 
 | Page | Purpose | Built in Milestone 1? |
 |---|---|---|
@@ -166,7 +161,7 @@ The project aims to reduce the time spent navigating between pages and make scor
 | About and Sources | Explain the website’s scope, sources, update process and the difference between points and eligibility. | No |
 
 ### 2.5 GitHub issues
-> Paste the links to your five issues.
+
 
 1. Build the home page and the core page (HTML): https://github.com/rishabhssworld/studio-project-1/issues/1
 2. Style the site: palette, responsive layout and components: https://github.com/rishabhssworld/studio-project-1/issues/2
@@ -175,7 +170,7 @@ The project aims to reduce the time spent navigating between pages and make scor
 5. Feature: calculate points with a category breakdown: https://github.com/rishabhssworld/studio-project-1/issues/5
 
 ### 2.6 Abstract check
-> Re-read your abstract from 1.6 against your Must-haves. Edit it if it no longer matches (keep it 150 to 250 words), then say what you changed.
+
 
 - **What I changed (or why nothing):** I clarified that users can browse current and past selection updates. The abstract matches my Must-have features: browsing programs and streams, viewing requirements with official sources, and calculating points for one supported stream with a category breakdown.
 
@@ -183,7 +178,7 @@ The project aims to reduce the time spent navigating between pages and make scor
 
 ## Part 3: Storyboard
 
-> Four to six panels. The first shows the problem, the last shows it solved, and the same persona appears throughout. Save images in `design/storyboard/` and embed them below with `![description](design/storyboard/panel-1.jpg)`.
+
 
 | Panel | Scene (where, who) | What happens | What they think or feel | Screen shown |
 |---|---|---|---|---|
@@ -203,7 +198,7 @@ The project aims to reduce the time spent navigating between pages and make scor
 ## Part 4: Site Map and Wireframes
 
 ### 4.1 Site map
-> A Mermaid diagram (GitHub draws it). Replace the example.
+
 
 ```mermaid
 flowchart TD
@@ -216,7 +211,7 @@ flowchart TD
 ```
 
 ### 4.2 Wireframes
-> Four images: Home and core page, each on a phone-width and a desktop-width screen. Real words, no colour. Embed them.
+
 
 **Home, phone:** 	![Home page phone wireframe](design/wireframes/home-mobile.png)
 **Home, desktop:** 	![Home page desktop wireframe](design/wireframes/home-desktop.png)
@@ -224,7 +219,7 @@ flowchart TD
 **Core page, desktop:** ![Browse Updates desktop wireframe](design/wireframes/core-desktop.png)
 
 ### 4.3 Annotations
-> For each region of each page, name the HTML element and say why.
+
 
 **Home page**
 
@@ -278,7 +273,7 @@ flowchart TD
 | Secondary text | `--color-muted` | #475569 |
 
 ### 5.3 Contrast table
-> At least six real pairs. Every normal-text pair must be 4.5 : 1 or better (3 : 1 for large text). Use https://webaim.org/resources/contrastchecker/
+
 
 | Text colour | On | What it is | Ratio | Passes? |
 |---|---|---|---|---|
@@ -297,7 +292,7 @@ flowchart TD
 - **Corner radius:** 0.5rem
 
 ### 5.5 Pace check
-> Halfway through your time, run `git log --format='%ad' --date=short | sort -u | wc -l`. You need commits on at least four different days.
+
 
 ```text
 2
@@ -308,7 +303,7 @@ flowchart TD
 ## Part 6: Build the Structure (HTML)
 
 ### 6.1 Build table
-> Match the regions from Part 4 to what you built.
+
 
 | Wireframe region | Element in my HTML | File |
 |---|---|---|
@@ -342,7 +337,7 @@ flowchart TD
 ## Part 7: Style It (CSS)
 
 ### 7.1 Match table
-> Compare the finished pages with your wireframes.
+
 
 | Page | What matches | What changed, and why |
 |---|---|---|
@@ -369,7 +364,7 @@ flowchart TD
 ![CSS validation showing no errors and four warnings](screenshots/CSS-validation.png)
 
 ### 7.5 Screenshots
-> Embed them: `screenshots/home-375.png`, `screenshots/home-1280.png`, `screenshots/core-375.png`, `screenshots/core-1280.png`.
+
 
 ![Home at 375px](screenshots/home-375.png)
 
@@ -383,54 +378,83 @@ flowchart TD
 
 ## Part 8: Git and GitHub
 
-**Repository:** https://github.com/...
-**Issue #1 (closed):** https://github.com/rishabhssworld/studio-project-1/pull/6
-**Issue #2 (closed):** https://github.com/...
-**Merged Pull Request for HTML:** https://github.com/...
-**Merged Pull Request for CSS:** https://github.com/...
-**Release v0.1.0:** https://github.com/...
+**Repository:** https://github.com/rishabhssworld/studio-project-1
+**Issue #1 (closed):** https://github.com/rishabhssworld/studio-project-1/issues/1
+**Issue #2 (closed):** https://github.com/rishabhssworld/studio-project-1/issues/2
+**Merged Pull Request for HTML:** https://github.com/rishabhssworld/studio-project-1/pull/6
+**Merged Pull Request for CSS:** https://github.com/rishabhssworld/studio-project-1/pull/7
+**Release v0.1.0:** https://github.com/rishabhssworld/studio-project-1/releases/tag/v0.1.0
 
 ```text
-(git log --oneline | wc -l)
+(base) rishabhbhutani@RISHABHs-MacBook-Pro studio-project-1 % git log --oneline | wc -l
+      16
 ```
 ```text
-(git log --format='%ad' --date=short | sort -u | wc -l)
+(base) rishabhbhutani@RISHABHs-MacBook-Pro studio-project-1 % git log --format='%ad' --date=short | sort -u | wc -l
+       2
 ```
 ```text
-(git branch -a)
+(base) rishabhbhutani@RISHABHs-MacBook-Pro studio-project-1 % git branch -a
+  feature/html-pages
+  feature/responsive-css
+* main
+  remotes/origin/feature/html-pages
+  remotes/origin/feature/responsive-css
+  remotes/origin/main
 ```
 ```text
-(git log --oneline --graph --all | head -20)
+(base) rishabhbhutani@RISHABHs-MacBook-Pro studio-project-1 % git log --oneline --graph --all | head -20
+* 1c01f61 Complete project README and correct validation image link
+*   b2bc692 Merge pull request #7 from rishabhssworld/feature/responsive-css
+|\  
+| * 10340e0 Complete responsive checks and document CSS validation
+| * 483b2bf Style filter form and add responsive breakpoints
+| * 34f6934 Add reusable cards, buttons and grid layouts
+| * ff89fe6 Style shared header, navigation and footer
+| * 779019e Add CSS design tokens and base styles
+|/  
+*   0791503 Merge pull request #6 from rishabhssworld/feature/html-pages
+|\  
+| * f8489a4 Document HTML structure and validation results
+| * ccc95a0 Build updates page with labelled filters and sample selections
+| * 6b57ca9 Build semantic home page with pathway navigation
+|/  
+* cd2cd50 Add palette, contrast ratios, typography and spacing
+* edd7b20 Add site map, annotated wireframes and user test
+* fc1d93d Add scope, user flow, data sketch and GitHub issues
+* ceab76a Add project name, tagline and idea check
+* 609e8bf Add starter structure
 ```
 
 ---
 
 ## Part 9: Reflection
 
-> Two to four sentences each, about your own project.
 
-1. **From idea to problem:** YOUR ANSWER HERE
-2. **Evidence:** YOUR ANSWER HERE
-3. **The hardest decision:** YOUR ANSWER HERE
-4. **Design to code:** YOUR ANSWER HERE
-5. **Risks for the next milestones:** YOUR ANSWER HERE
-6. **Tools (including any AI tool, and what I did myself):** ChatGPT helped generate a storyboard reference, and I drew the submitted version myself. Took help from ChatGPT to make wireframes
+I started with the idea of bringing PR pathway information, draws and points calculators into one website. Helping a friend research an Ontario pathway showed me a more specific problem: finding relevant requirements involved opening several pages, and calculating points required reading a PDF. This helped me focus the project on finding stream-specific information and understanding points.
+
+1. **From idea to problem:** I started with the idea of bringing PR pathway information, draws and points calculators into one website. Helping a friend research an Ontario pathway showed me a more specific problem: finding relevant requirements involved opening several pages, and calculating points required reading a PDF. This helped me focus the project on finding stream-specific information and understanding points.
+2. **Evidence:** The conversations helped me see that users wanted both easier navigation and a clearer way to calculate points. One friend described difficulty locating relevant information, while another wanted to understand how each answer contributed to the total score. This influenced my decision to organize information by program and stream and plan a calculator with a category breakdown.
+3. **The hardest decision:** The hardest decision was choosing how much to include in the first version. I wanted pathway information, current and past draws, and points calculators, but supporting every pathway would be too much for an individual project. I limited this milestone to two HTML and CSS pages and planned one supported calculator for a later milestone.
+4. **Design to code:** The wireframes helped me decide the content order before building the pages. I used semantic HTML for the page regions, Flexbox for the header and navigation, and Grid for the cards. The phone layout uses one column, while wider screens place cards side by side and move the filters beside the results.
+5. **Risks for the next milestones:** The main risk is keeping pathway requirements and scoring rules accurate when official information changes. Different streams also use different scoring systems, so each calculator will need separate checks against its official criteria. I will start with one supported stream, record official-source links and last-checked dates, and test the calculator before expanding.
+6. **Tools (including any AI tool, and what I did myself):** I used VS Code, Git, GitHub, Chrome DevTools and the W3C validators to build and check the project. ChatGPT helped me generate storyboard and wireframe references and provided HTML and CSS code with step-by-step instructions. I contributed the project idea and user research, entered and reviewed the content and code, and carried out browser checks, validation and GitHub tasks. My Git history records 16 commits at this checkpoint across two days, so I did not meet the required four commit days.
 
 ### Self-assessment
 
 | Area | Points | My score | One line of justification |
 |---|---|---|---|
-| Problem definition and evidence | 15 | | |
-| Scope and data | 10 | | |
-| Storyboard | 10 | | |
-| Wireframes and site map | 10 | | |
-| Design decisions | 5 | | |
-| HTML | 15 | | |
-| CSS and responsiveness | 15 | | |
-| Git and GitHub | 15 | | |
-| Reflection and completeness | 5 | | |
+| Problem definition and evidence | 15 | 11 | The problem, persona and abstract are complete, but the interview evidence still needs a final check for two exact quotes per participant. |
+| Scope and data | 10 | 9 | The scope includes priorities, a user flow, five pages, a data sketch and five GitHub issues. |
+| Storyboard | 10 | 8 | Six panels show the problem, main task and outcome, with AI reference assistance disclosed. |
+| Wireframes and site map | 10 | 9 | Four annotated wireframes and a site map are included, and the Home design was updated after feedback. |
+| Design decisions | 5 | 4 | The palette, contrast ratios, typography and spacing are documented. |
+| HTML | 15 | 13 | Both pages passed validation and include semantic structure, navigation, repeated articles and labelled form controls. |
+| CSS and responsiveness | 15 | 13 | The stylesheet uses tokens, Flexbox, Grid and two mobile-first breakpoints, with phone and desktop screenshots. |
+| Git and GitHub | 15 | 11 | There are at least 16 commits and two merged pull requests, but commits cover only two days; the release is still pending. |
+| Reflection and completeness | 5 | 4 | Reflections describe the project and tool assistance; a final completeness check remains. |
 
 ## Bonus (optional)
 
-- **Usability test (+3):** who I tested (roles), what happened, what I changed: YOUR ANSWER HERE
+- **Usability test (+3):** - **Usability test (+3):** I tested the Home wireframe with a work permit holder who said they would choose a familiar pathway first. I added named pathway links based on that feedback. A second participant then tried finding OINP updates on the prototype and reported no difficulty. They also said finding information on Ontario’s updated website had become easier, but they still calculated their points manually. I kept the named pathway links and retained the points calculator in the future scope.
 - **Live site (+2):** https://...
